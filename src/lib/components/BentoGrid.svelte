@@ -29,7 +29,7 @@
 					</div>
 					<div class="mt-8 flex gap-4">
 						<a
-							href="https://github.com/yourusername"
+							href="https://github.com/theolvq"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 transition-colors hover:bg-white/20"
@@ -44,7 +44,7 @@
 							GitHub
 						</a>
 						<a
-							href="https://linkedin.com/in/yourusername"
+							href="https://linkedin.com/in/theoleveque"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 transition-colors hover:bg-white/20"
