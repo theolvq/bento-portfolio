@@ -1,6 +1,6 @@
 ---
 title: Getting Started with SvelteKit
-publishedAt: '2024-03-20'
+publishedAt: '2024-12-06'
 excerpt: Learn how to build modern web applications with SvelteKit
 tags: ['sveltekit', 'javascript', 'web-development']
 ---

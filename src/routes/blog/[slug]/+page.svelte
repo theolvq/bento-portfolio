@@ -7,6 +7,13 @@
 	};
 </script>
 
+<svelte:head>
+	<title>{data.meta.title}</title>
+	<meta name="description" content={data.meta.excerpt} />
+	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.excerpt} />
+</svelte:head>
+
 <article class="mx-auto max-w-4xl px-4 py-8">
 	<header class="mb-8">
 		<h1 class="mb-4 text-4xl font-bold">{data.meta.title}</h1>
@@ -26,7 +33,7 @@
 		</div>
 	</header>
 
-	<div class="prose prose-lg max-w-none">
+	<div class="prose prose-lg max-w-prose">
 		<svelte:component this={data.content} />
 	</div>
 </article>
