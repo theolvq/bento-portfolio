@@ -5,8 +5,6 @@ excerpt: Learn how to build modern web applications with SvelteKit
 tags: ['sveltekit', 'javascript', 'web-development']
 ---
 
-# Getting Started with SvelteKit
-
 When I decided to rebuild my portfolio website, I wanted a framework that would be both powerful and enjoyable to work with. After exploring various options, I chose SvelteKit, and it's been an excellent decision. Let me share why, and how you can get started with it too.
 
 ## Why SvelteKit?

@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { type BlogPost } from '$lib/types';
+	import type { SvelteComponent } from 'svelte';
 
 	export let data: {
-		content: any;
+		content: typeof SvelteComponent;
 		meta: BlogPost;
 	};
 </script>
@@ -14,9 +15,9 @@
 	<meta property="og:description" content={data.meta.excerpt} />
 </svelte:head>
 
-<article class="mx-auto max-w-4xl px-4 py-8">
+<article class="mx-auto max-w-prose px-4 py-8">
 	<header class="mb-8">
-		<h1 class="mb-4 text-4xl font-bold">{data.meta.title}</h1>
+		<h1 class="mb-4 text-5xl font-bold">{data.meta.title}</h1>
 		<div class="flex items-center text-gray-600">
 			<time datetime={data.meta.publishedAt}>
 				{new Date(data.meta.publishedAt).toLocaleDateString()}
@@ -33,7 +34,7 @@
 		</div>
 	</header>
 
-	<div class="prose prose-lg max-w-prose">
+	<div class="prose prose-lg">
 		<svelte:component this={data.content} />
 	</div>
 </article>

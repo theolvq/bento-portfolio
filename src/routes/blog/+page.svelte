@@ -4,7 +4,7 @@
 	export let data: { posts: BlogPost[] };
 </script>
 
-<div class="mx-auto max-w-4xl px-4 py-8">
+<div class="mx-auto max-w-xl px-4 py-8">
 	<h1 class="mb-8 text-4xl font-bold">Blog Posts</h1>
 
 	<div class="space-y-8">
