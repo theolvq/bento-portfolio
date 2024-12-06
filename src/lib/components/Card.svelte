@@ -12,7 +12,7 @@
 
 <div
 	in:flyAndFade={{ direction, delay }}
-	class={`flex flex-col justify-between rounded-3xl bg-white/10 p-8 text-white backdrop-blur-sm ${className}`}
+	class={`rounded-3xl bg-white/10 p-8 text-white backdrop-blur-sm ${className}`}
 >
 	{@render children?.()}
 </div>

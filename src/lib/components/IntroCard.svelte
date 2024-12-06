@@ -2,7 +2,11 @@
 	import Card from './Card.svelte';
 </script>
 
-<Card direction="top-left" delay={0} class="md:col-span-2 md:row-span-2">
+<Card
+	direction="top-left"
+	delay={0}
+	class="flex flex-col justify-between md:col-span-2 md:row-span-2"
+>
 	<div>
 		<h1 class="mb-4 text-4xl font-bold md:text-5xl">Hi, I'm Theo</h1>
 		<p class="text-xl leading-relaxed opacity-90">
