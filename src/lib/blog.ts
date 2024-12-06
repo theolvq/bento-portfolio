@@ -19,3 +19,8 @@ export async function getAllPosts() {
 		(a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
 	);
 }
+
+export async function getLastPost() {
+	const posts = await getAllPosts();
+	return posts[0];
+}

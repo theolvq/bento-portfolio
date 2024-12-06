@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
+	import type { PageData } from './$types';
 	import BentoGrid from '$lib/components/BentoGrid.svelte';
+
+	let { data }: { data: PageData } = $props();
 </script>
 
 <svelte:head>
@@ -38,4 +41,4 @@
 	/>
 </svelte:head>
 
-<BentoGrid />
+<BentoGrid lastBlogPost={data.post} />

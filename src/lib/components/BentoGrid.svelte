@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 	import { flyAndFade } from '$lib/transitions';
 	import { techStack, featuredWork } from '$lib';
 	import { onMount } from 'svelte';
-
-	let mounted = false;
+	import type { BlogPost } from '$lib/types';
+	let { lastBlogPost } = $props<{ lastBlogPost: BlogPost }>();
+	let mounted = $state(false);
 
 	onMount(() => {
 		mounted = true;
@@ -114,6 +115,12 @@
 				>
 					<h2 class="mb-2 text-xl font-semibold">Blog & Articles</h2>
 					<p class="opacity-80">Thoughts on web development, design, and tech</p>
+					<a
+						href={`/blog/${lastBlogPost.slug}`}
+						class="mt-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm transition-all hover:bg-white/20"
+					>
+						{lastBlogPost.title}
+					</a>
 					<a
 						href="/blog"
 						class="mt-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm transition-all hover:bg-white/20"
