@@ -31,24 +31,3 @@ export const featuredWork = [
 		link: 'https://nice-out-pwa.vercel.app'
 	}
 ];
-
-export const personalProjects = [
-	{
-		title: 'DevKit',
-		description: 'A collection of developer tools and utilities',
-		tech: ['TypeScript', 'React', 'Electron'],
-		link: 'https://github.com/yourusername/devkit'
-	},
-	{
-		title: 'AI Chat Interface',
-		description: 'Modern chat interface for AI interactions',
-		tech: ['SvelteKit', 'OpenAI API', 'TailwindCSS'],
-		link: 'https://github.com/yourusername/ai-chat'
-	},
-	{
-		title: 'CLI Task Manager',
-		description: 'Command-line productivity tool',
-		tech: ['Python', 'Click', 'SQLite'],
-		link: 'https://github.com/yourusername/cli-tasks'
-	}
-];
