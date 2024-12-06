@@ -1,11 +1,7 @@
 <script lang="ts">
-	import { type BlogPost } from '$lib/types';
-	import type { SvelteComponent } from 'svelte';
 
-	export let data: {
-		content: typeof SvelteComponent;
-		meta: BlogPost;
-	};
+	const { data } = $props();
+
 </script>
 
 <svelte:head>
@@ -35,6 +31,6 @@
 	</header>
 
 	<div class="prose prose-lg">
-		<svelte:component this={data.content} />
+		<data.content />
 	</div>
 </article>

@@ -1,3 +1,5 @@
+import { error } from '@sveltejs/kit';
+
 export async function load({ params }) {
 	try {
 		const post = await import(`../../../../posts/${params.slug}.md`);
@@ -7,6 +9,6 @@ export async function load({ params }) {
 		};
 	} catch (e) {
 		console.error(e);
-		throw new Error(`Could not find post ${params.slug}`);
+		error(404, `Could not find post ${params.slug}`);
 	}
 }
