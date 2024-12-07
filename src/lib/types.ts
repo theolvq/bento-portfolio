@@ -1,3 +1,5 @@
+import type { featuredWork } from './data';
+
 export interface BlogPost {
 	title: string;
 	slug: string;
@@ -5,3 +7,5 @@ export interface BlogPost {
 	excerpt: string;
 	tags?: string[];
 }
+
+export type FeaturedWork = (typeof featuredWork)[number];
